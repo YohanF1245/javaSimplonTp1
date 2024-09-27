@@ -22,6 +22,7 @@ public class Exo1 {
 		System.out.println("EXERCICE 8 – TEST AVANCE");
 		System.out.println("EXERCICE 9 - BOUCLE");
 		System.out.println("EXERCICE 11 - BOUCLE");
+		System.out.println("EXERCICE 12 - OPERATIONS");
 		
 		Scanner inputChoice = new Scanner(System.in);
 		System.out.println("Selectionner le numero de l'exercice : ");
@@ -66,6 +67,10 @@ public class Exo1 {
 		}
 		case 11: {
 			exercice11();
+			break;
+		}
+		case 12: {
+			exercice12();
 			break;
 		}
 		default:
@@ -182,9 +187,21 @@ public class Exo1 {
 	}
 	
 	public static void exercice11() {
-		
+		//EXERCICE 11 - BOUCLE
+		//Afficher les codes des caractères des nombres 1 à 255
 		for(int i = 1; i<= 255; i++) {
 			System.out.println((char) i);
 		}
+	}
+	public static void exercice12() {
+		//EXERCICE 12 - OPERATIONS
+		//Echanger les valeurs de 2 variables
+		SwitchVar ex12 = new SwitchVar();
+		System.out.println("Avec a=1 et b=2 : ");
+		ex12.setA(1);
+		ex12.setB(2);
+		ex12.switchValues();
+		System.out.println("A="+ex12.getA()+" et B="+ex12.getB());
+		
 	}
 }     
