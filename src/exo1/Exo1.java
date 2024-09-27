@@ -18,9 +18,10 @@ public class Exo1 {
 		System.out.println("EXERCICE 4 – SAISIE DE VALEUR");
 		System.out.println("EXERCICE 5 – TEST SIMPLE");
 		System.out.println("EXERCICE 6 – TEST SIMPLE");
-		System.out.println("EXERCICE 7 – TEST AVANCE");
+		System.out.println("EXERCICE 7 – TES AVANCE");
 		System.out.println("EXERCICE 8 – TEST AVANCE");
-		
+		System.out.println("EXERCICE 9 - BOUCLE");
+		System.out.println("EXERCICE 11 - BOUCLE");
 		
 		Scanner inputChoice = new Scanner(System.in);
 		System.out.println("Selectionner le numero de l'exercice : ");
@@ -57,6 +58,14 @@ public class Exo1 {
 		}
 		case 8: {
 			exercice8();
+			break;
+		}
+		case 9: {
+			exercice9();
+			break;
+		}
+		case 11: {
+			exercice11();
 			break;
 		}
 		default:
@@ -163,5 +172,19 @@ public class Exo1 {
 		System.out.println("Le mois de "+month+" possède "+ex8b.getDays()+" jours");
 		
 		
+	}
+	public static void exercice9() {
+		//EXERCICE 9 - BOUCLE
+		//Afficher à l’écran les nombres de 1 à 100
+		for (int i = 1; i<=100; i++) {
+			System.out.println(i);
+		}
+	}
+	
+	public static void exercice11() {
+		
+		for(int i = 1; i<= 255; i++) {
+			System.out.println((char) i);
+		}
 	}
 }     
