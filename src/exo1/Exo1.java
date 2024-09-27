@@ -16,6 +16,13 @@ public class Exo1 {
 		ex2.setHelloWorld("Goodbye, World!");
 		System.out.println(ex2.getHelloWorld());
 		
+		//EXERCICE 3 – CALCUL ARITHMETIQUE
+		//Afficher le périmètre d’un cercle dont le rayon est une variable
+		
+		CirclePerimeter ex3 = new CirclePerimeter();
+		ex3.setRayon(4);
+		System.out.println("Le périmètre d'un cercle de rayon "+ex3.getRayon()+" est de "+ex3.calculatePerimeter()+" centimètres");
+		
 	}
 
 }     
