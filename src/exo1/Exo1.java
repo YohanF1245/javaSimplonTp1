@@ -65,7 +65,7 @@ public class Exo1 {
 		Scanner inputContinue= new Scanner(System.in);
 		System.out.println("Stopper le programme y/n");
 		char continueProgram = inputContinue.next().charAt(0);
-		if(continueProgram == 'n') {
+		if(continueProgram == 'y') {
 			continueRun=(false);
 		}
 		}
@@ -160,7 +160,7 @@ public class Exo1 {
 		
 		String month = inputMonth.next();
 		ex8b.setMonth(month);
-		System.out.println("Le mois de "+month+" possède "+ex8b.getDays()+" days");
+		System.out.println("Le mois de "+month+" possède "+ex8b.getDays()+" jours");
 		
 		
 	}
