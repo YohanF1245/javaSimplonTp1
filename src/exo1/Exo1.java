@@ -19,6 +19,7 @@ public class Exo1 {
 		System.out.println("EXERCICE 5 – TEST SIMPLE");
 		System.out.println("EXERCICE 6 – TEST SIMPLE");
 		System.out.println("EXERCICE 7 – TEST AVANCE");
+		System.out.println("EXERCICE 8 – TEST AVANCE");
 		
 		
 		Scanner inputChoice = new Scanner(System.in);
@@ -52,6 +53,10 @@ public class Exo1 {
 		}
 		case 7: {
 			exercice7();
+			break;
+		}
+		case 8: {
+			exercice8();
 			break;
 		}
 		default:
@@ -143,5 +148,20 @@ public class Exo1 {
 		int year = inputYear.nextInt();
 		ex7.setYear(year);
 		System.out.println("L'année "+year+" "+ex7.LeapYear());		
+	}
+	public static void exercice8() {
+		// EXERCICE 8 BIS – TEST AVANCE
+		// Reprendre l’exercice précédent et modifier pour prendre en entrée une chaîne de caractères
+		
+		DaysInMonth ex8b = new DaysInMonth();
+		
+		Scanner inputMonth = new Scanner(System.in);
+		System.out.println("Entrez un mois");
+		
+		String month = inputMonth.next();
+		ex8b.setMonth(month);
+		System.out.println("Le mois de "+month+" possède "+ex8b.getDays()+" days");
+		
+		
 	}
 }     
