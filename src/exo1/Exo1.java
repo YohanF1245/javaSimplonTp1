@@ -37,6 +37,18 @@ public class Exo1 {
 		ex4.setRayon(rayon);
 		System.out.println("Le périmètre d'un cercle de rayon "+ex4.getRayon()+" est de "+ex4.calculatePerimeter()+" centimètres");
 		
+		//EXERCICE 5 – TEST SIMPLE
+		//A partir d’une valeur saisie, vérifier si l’utilisateur est majeur ou mineur
+		
+		AgeTest ex5 = new AgeTest();
+		
+		Scanner inputAge = new Scanner(System.in);
+		System.out.println("Indiquez votre age : ");
+		
+		int age = inputAge.nextInt();
+		ex5.setAge(age);
+		System.out.println("Vous etes : "+ex5.majorityTest());
+		
 	}
 
 }     
