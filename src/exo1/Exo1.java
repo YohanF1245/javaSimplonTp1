@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Exo1 {
 
 	public static void main(String[] args) {
-		//EXERCICE 1 – AFFICHAGE D’UNE CHAINE
+		
+		/*//EXERCICE 1 – AFFICHAGE D’UNE CHAINE
 		//Afficher le texte Hello World dans la console de sortie
 		
 		ShowString ex1 = new ShowString();
@@ -59,7 +60,17 @@ public class Exo1 {
 		
 		int num = inputNum.nextInt();
 		ex6.setNumToTest(num);
-		System.out.println("Le nombre "+num+"est : "+ex6.evenOrOdd());
+		System.out.println("Le nombre "+num+" est : "+ex6.evenOrOdd());*/
+		
+		//EXERCICE 7 – TEST AVANCE
+		//Vérifier si une année est bissextile.
+		//Pour rappel, une année bissextile est une année multiple de 4, mais pas multiple de 100 ou alors multiple de
+		//400.
+		
+		LeapYear ex7 = new LeapYear();
+		
+		Scanner inputYear = new 
+		
 		
 	}
 
