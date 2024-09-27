@@ -49,6 +49,18 @@ public class Exo1 {
 		ex5.setAge(age);
 		System.out.println("Vous etes : "+ex5.majorityTest());
 		
+		//EXERCICE 6 – TEST SIMPLE
+		//A partir d’une valeur saisie, indiquer si le nombre saisi est pair ou impair
+		
+		EvenTest ex6 = new EvenTest();
+		
+		Scanner inputNum = new Scanner(System.in);
+		System.out.println("Entrez un nombre");
+		
+		int num = inputNum.nextInt();
+		ex6.setNumToTest(num);
+		System.out.println("Le nombre "+num+"est : "+ex6.evenOrOdd());
+		
 	}
 
 }     
