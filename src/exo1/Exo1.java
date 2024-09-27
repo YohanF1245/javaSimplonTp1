@@ -1,5 +1,7 @@
 package exo1;
 
+import java.util.Scanner;
+
 public class Exo1 {
 
 	public static void main(String[] args) {
@@ -22,6 +24,18 @@ public class Exo1 {
 		CirclePerimeter ex3 = new CirclePerimeter();
 		ex3.setRayon(4);
 		System.out.println("Le périmètre d'un cercle de rayon "+ex3.getRayon()+" est de "+ex3.calculatePerimeter()+" centimètres");
+		
+		//EXERCICE 4 – SAISIE DE VALEUR
+		//Afficher le périmètre d’un cercle dont le rayon est demandé à l’utilisateur
+		
+		CirclePerimeter ex4 = new CirclePerimeter();
+	
+		Scanner inputRayon = new Scanner(System.in);
+		System.out.println("Indiquez le rayon : ");
+		
+		float rayon = inputRayon.nextFloat();
+		ex4.setRayon(rayon);
+		System.out.println("Le périmètre d'un cercle de rayon "+ex4.getRayon()+" est de "+ex4.calculatePerimeter()+" centimètres");
 		
 	}
 
